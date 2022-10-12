@@ -1,5 +1,6 @@
 scoreboard objectives add nt.Nether_multiplier dummy
 scoreboard objectives add nt.coordinates_X dummy
+scoreboard objectives add nt.coordinates_Y dummy
 scoreboard objectives add nt.coordinates_Z dummy
 scoreboard objectives add nt.Nether_coordinates_X dummy
 scoreboard objectives add nt.Nether_coordinates_Z dummy
