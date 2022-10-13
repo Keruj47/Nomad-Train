@@ -1,5 +1,3 @@
-kill @e[nbt={Tags:["nt.worldborder_center_marker"]}]
-summon minecraft:marker ~ ~ ~ {Tags:["nt.worldborder_center_marker"]}
 data merge storage nt:worldborder_center_marker {Pos:[0d,0d,0d]}
 
 scoreboard objectives add nt.Nether_multiplier dummy
