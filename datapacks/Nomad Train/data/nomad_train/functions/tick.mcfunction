@@ -19,6 +19,9 @@ execute store result storage nt:worldborder_center_marker Pos[0] double 1 run sc
 execute store result storage nt:worldborder_center_marker Pos[1] double 1 run scoreboard players get @e[type=create:carriage_contraption,limit=1] nt.coordinates_Y
 execute store result storage nt:worldborder_center_marker Pos[2] double 1 run scoreboard players get @e[type=create:carriage_contraption,limit=1] nt.Nether_coordinates_Z
 
+kill @e[tag=nt.worldborder_center_marker]
+execute in minecraft:overworld unless entity @e[tag=nt.worldborder_center_marker,distance=0..] run execute in minecraft:overworld run summon minecraft:marker ~ ~ ~ {Tags:["nt.worldborder_center_marker"]}
+
 #Setting marker's Pos value to Pos from nt:worldborder_center_marker storage and forceloading that chunk
 execute in minecraft:the_nether if entity @e[type=create:carriage_contraption,limit=1,distance=0..] run execute in minecraft:overworld at @e[type=marker,tag=nt.worldborder_center_marker] align xz run forceload remove ~ ~ ~ ~
 execute in minecraft:the_nether if entity @e[type=create:carriage_contraption,limit=1,distance=0..] run execute in minecraft:overworld as @e[type=marker,tag=nt.worldborder_center_marker] run data modify entity @s Pos set from storage nt:worldborder_center_marker Pos
