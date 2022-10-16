@@ -13,7 +13,7 @@ scoreboard objectives add nt.coordinates_Z dummy
 scoreboard objectives add nt.Nether_coordinates_X dummy
 scoreboard objectives add nt.Nether_coordinates_Z dummy
 
-#Running tick function
+#Running tick function (to set-up the worldborder from the first tick, thus avoiding possible gap between load and first tick after load)
 function nomad_train:tick
 
 #Load message
