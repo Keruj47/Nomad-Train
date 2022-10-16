@@ -1,4 +1,4 @@
-#Executing general function
+#Executing general function (applicable in all cases)
 function nomad_train:general
 
 #Executing overworld function (if the train is in Overworld)
