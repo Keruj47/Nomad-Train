@@ -1,0 +1,3 @@
+#Creating and activating structure block with train structure at nearest player
+execute as @p at @s run setblock ~ ~ ~ minecraft:structure_block[mode=load]{author:"Keruj47",ignoreEntities:1b,integrity:1.0f,metadata:"",mirror:"NONE",mode:"LOAD",name:"nomad_train:train",posX:-7,posY:-7,posZ:0,powered:0b,rotation:"NONE",seed:0L,showair:0b,showboundingbox:1b,sizeX:15,sizeY:14,sizeZ:48}
+execute as @p at @s run setblock ~ ~1 ~ redstone_block
